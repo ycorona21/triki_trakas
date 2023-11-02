@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:triki_trakas/presentation/screens/home/home_screen.dart';
+import 'package:triki_trakas/config/router/app_router.dart';
+import 'package:triki_trakas/config/theme/app_theme.dart';
 
-main() {
+void main() {
   runApp(const MainApp());
 }
 
@@ -10,14 +11,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      // theme: AppBarTheme(selectedColor: 4).getTheme(),
-      home: const HomeScreen(),
+      theme: AppTheme(selectedColor: 4).getTheme(),
+      // home: const HomeScreen(),
+      routerConfig: appRouter,
     );
   }
 }
-
 
 
         // This is the theme of your application.
