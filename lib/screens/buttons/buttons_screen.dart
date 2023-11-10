@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:triki_trakas/presentation/screens/widgets/custom_button.dart';
+import 'package:triki_trakas/presentation/widgets/custom_button.dart';
 
 class ButtonsScreen extends StatelessWidget {
   static const String screenName = 'button_screen';
@@ -11,6 +11,8 @@ class ButtonsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Buttons Screen'),
+        automaticallyImplyLeading:
+            false, // Establece esto en false para ocultar el botón de retorno
       ),
       body: const _ButtonsView(),
       floatingActionButton: FloatingActionButton(

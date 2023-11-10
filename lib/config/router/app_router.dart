@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:triki_trakas/presentation/screens/screens.dart';
+import 'package:triki_trakas/screens/screens.dart';
 
 final GoRouter appRouter = GoRouter(
   routes: <RouteBase>[
@@ -21,6 +21,12 @@ final GoRouter appRouter = GoRouter(
       name: CardsScreen.screenName,
       builder: (BuildContext context, GoRouterState state) =>
           const CardsScreen(),
+    ),
+    GoRoute(
+      path: '/progress',
+      name: ProgressScreen.screenName,
+      builder: (BuildContext context, GoRouterState state) =>
+          const ProgressScreen(),
     ),
   ],
 );
