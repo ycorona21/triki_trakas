@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:triki_trakas/presentation/widgets/appBars/app_bar_custom.dart';
 
-class UiControlsScreen extends StatelessWidget {
-    static const screenName = 'ui_controls_screen';
+class UiControlsScreen extends StatelessWidget with AppBarCustom {
+  static const screenName = 'ui_controls_screen';
   const UiControlsScreen({super.key});
 
   @override
